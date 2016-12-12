@@ -1,51 +1,244 @@
-extends base
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>2016大二暑期实训体会 | Hexo</title>
+  <meta name="author" content="John Doe">
+  
+  <meta name="description" content="2016大二暑期实训体会">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-block title
-  title= page.title + ' | ' + config.title
+  <meta property="og:title" content="2016大二暑期实训体会"/>
+  <meta property="og:site_name" content="Hexo"/>
 
-block content
-  .post
-    h1.post-title= page.title
-    .post-meta= page.date.format('ll')
-      if page.categories.length > 0
-        span= ' | '
-        span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
-      if theme.busuanzi == true
-        script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
-    if theme.duoshuo
-      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content)
-    .post-content
-      != page.content
-    if theme.shareto == true
-      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
-      a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}')= __('shareto')
-    include _partial/tag
-    include _partial/post_nav
-    if theme.duoshuo
-      div(class='ds-share flat' data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
-         .ds-share-inline
-            ul.ds-share-icons-16
-              li(data-toggle='ds-share-icons-more')
-                a(class='ds-more' href='javascript:void(0);') 分享到：
-              li
-                a(class='ds-weibo' href='javascript:void(0);' data-service='weibo') 微博
-              li
-                a(class='ds-qzone' href='javascript:void(0);' data-service='qzone') QQ空间
-              li
-                a(class='ds-qqt' href='javascript:void(0);' data-service='qqt') 腾讯微博
-              li
-                a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
-            .ds-share-icons-more
-    include _partial/comments
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Hexo</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-08-10T16:19:56.000Z"><a href="/2016/08/11/2016大二暑期实训体会/">2016-08-11</a></time>
+      
+      
+  
+    <h1 class="title">2016大二暑期实训体会</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>2016大二暑期实训体会</p>
+<a id="more"></a>
+<p>&emsp;&emsp;一周、两周、三周、四周，什么？游戏要结束了？真的就这样结束了？啊，老子还没过够打怪升级的瘾啊！我不管，我就要打怪，我还想升级啊！！！</p>
+<p>&emsp;&emsp;可是，服务器已经关闭了…我的装备啊，我的宠物宝宝啊，我的金币啊，我的好友啊，我的NPC啊，我的….</p>
+<p>&emsp;&emsp;好吧，事已成定局，米已变熟饭，接下来能做的就是，嘿嘿嘿~~~</p>
+<p>&emsp;&emsp;言归正传，暑期实训结束啦，结束啦，结束啦，重要的事情当然要说三遍咯！</p>
+<p>&emsp;&emsp;这次暑期实训我们游走于袋鼠窝和袋鼠帮，早上下午在袋鼠帮快快乐乐写代码，调bug，学习新知识，新技术，一起调戏嘛噶学长等等，中午在袋鼠窝狼吞虎咽地吃顿美味大餐，兄弟，一碗不够再来一碗，两碗不够就没了。吃完之后，轮流刷碗，这是学长们的福音，是学弟们的光(zai)荣(nan)。之后就赶紧抢床位，然而躺在外边椅子上的我并不着急，所以就免去了一些血雨腥风的fight,嘻嘻嘻！！！</p>
+<p>&emsp;&emsp;每天躺下之后，总能看到还没有熄灭的吊灯，静静地注视一会，总会带给我一种静谧平静的感觉。</p>
+<p><img src="/img/deparment.jpg" alt=""></p>
+<p>&emsp;&emsp;接下来就是我们每天朝九晚六，绝大部分时间所待的地方：袋鼠帮！</p>
+<p>&emsp;&emsp; <strong> ~前方多图高能预警~ </strong></p>
+<p><img src="/img/outside.jpg" alt=""></p>
+<p>&emsp;&emsp;近图</p>
+<p><img src="/img/building.jpg" alt=""></p>
+<p>&emsp;&emsp;接下来再简单地看一下袋鼠帮内部</p>
+<p><img src="/img/indoor.jpg" alt=""><br><img src="/img/indoor2.jpg" alt=""></p>
+<p>&emsp;&emsp;没错，在过去的四周，我们就是在这里打怪升级—暑期实训的。每天早上9点左右出发，大家骑着自行车，或者拼车过去上班，然后中午在袋鼠窝吃顿午饭，休息会，再继续下午的工作，傍晚手工回家。一天的工作就这样结束啦。从表面上，一天天的循规蹈矩的，但在我们工作的一分一秒中，都可能有困难的发生，也会有新的思考萦绕于脑中。</p>
+<p>&emsp;&emsp;在这四周的工作中，我们还做过两次线下产品推广活动。同时这也是我第一次做这样的活动，所以在其中还是有些地方做的不够好。关于此次活动，我总结了两点：</p>
+<ul>
+<li>要有强烈的推广意识</li>
+</ul>
+<p>&emsp;&emsp;注意，是强烈的推广意识。这个时候请允许我回忆一个推广场景：在做线下推广的时候，好不容易拉到了一个用户，说服其花费一点时间来扫个码，绑定个手机号。这个时候，我只是在一旁静静地注视着这一切，而这其中存在着一段双方沉默时间，其实是可以利用起来的。就像罗总事后给我们总结点拨的那样：唉，你看，在那个时间段，我就可以进一步介绍我们xxx是做什么的呀，公司也就在旁边的大厦，xx楼之类的。这样我们充分利用了这段时间，而且尽最大可能来将这位用户发展成我们的潜在用户呢！听完之后，可爱的我瞬间就明白了某些事情。没错，这个就是我想要表达的推广意识，而且还是强烈的。</p>
+<p>&emsp;&emsp;再举一个例子，以此来说明我们在做推广的时候，在活动中一定要明确我们的目标人群是哪些？小孩子？有志青年？中年大妈？老爷爷老奶奶？然后再以此来制定我们具体的推广方案。当时我们做的两次线下推广活动都是一样的，目标人群都是小孩纸！！！为什么呢？因为我们屌炸天的产品啊！（写到这里热血澎湃有木有！！！）然后我们的推广方法就是通过“幸运大转盘”活动（名字虽然有点普通，不过我们要看效果嘛！！！咳咳咳），在实际操作的时候，也是瞄准带有小孩子的家长（注意是小公举们，屌丝御姐之类的就不要来瞎凑合了），这样我们就专挑这样的目标人群“下手”，几乎是一下一个准啊，百发百中有木有！！！通过这样一个简单的小例子，来说明上边所提到的。（本段文章可能就点过于激动，希望大家理解）</p>
+<ul>
+<li>学会接受别人的拒绝</li>
+</ul>
+<p>&emsp;&emsp;接着要分享一下这句话：学会接受别人的拒绝。啊，大家不要首先想到男女表白失败，学会接受拒绝哦。（大家都是成年人了，思想正直点！）回到正题，这里的拒绝，指的就是在做线下推广的时候，面对路人的不加理睬、忽视等。想想当初在校园里边做活动宣传的时候，各位亲爱的同学们许多也是这样的，现在出了校园，来到了社会，同样有这样的情况，而且甚至有过之而无不及。在面对别人的拒绝，我们要做好准备，试着告诉自己：学会接受，微笑再来。我觉着这八个字是做线下活动（尤其是这种吆喝拉路人的推广活动）必须牢记于心，而且身体力行的。其实许多东西我们都能做到牢记于心，但是身体本能对于拒绝的畏惧，失败的没落是有所抗拒的，为此我们才能需要做到身体力行！！！记住没啥太大的用处，能做到才是真本事！（其实，这句话用在情场也是挺受用的）</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/实习实训/">实习实训</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/实训实习/">实训实习</a>, <a href="/tags/总结体会/">总结体会</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://yoursite.com/2016/08/11/2016大二暑期实训体会/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">Kategorien</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/个人思考/">个人思考</a><small>4</small></li>
+  
+    <li><a href="/categories/实习实训/">实习实训</a><small>1</small></li>
+  
+    <li><a href="/categories/日记/">日记</a><small>2</small></li>
+  
+    <li><a href="/categories/读书/">读书</a><small>3</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/人性/">人性</a><small>1</small></li>
+  
+    <li><a href="/tags/企业/">企业</a><small>1</small></li>
+  
+    <li><a href="/tags/企业家/">企业家</a><small>1</small></li>
+  
+    <li><a href="/tags/创业/">创业</a><small>1</small></li>
+  
+    <li><a href="/tags/反思/">反思</a><small>2</small></li>
+  
+    <li><a href="/tags/国庆游玩/">国庆游玩</a><small>1</small></li>
+  
+    <li><a href="/tags/大学班会/">大学班会</a><small>1</small></li>
+  
+    <li><a href="/tags/实训实习/">实训实习</a><small>1</small></li>
+  
+    <li><a href="/tags/开放/">开放</a><small>1</small></li>
+  
+    <li><a href="/tags/思考/">思考</a><small>3</small></li>
+  
+    <li><a href="/tags/总结体会/">总结体会</a><small>1</small></li>
+  
+    <li><a href="/tags/母爱/">母爱</a><small>1</small></li>
+  
+    <li><a href="/tags/管理/">管理</a><small>1</small></li>
+  
+    <li><a href="/tags/经济/">经济</a><small>1</small></li>
+  
+    <li><a href="/tags/耐心/">耐心</a><small>1</small></li>
+  
+    <li><a href="/tags/自信/">自信</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 John Doe
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

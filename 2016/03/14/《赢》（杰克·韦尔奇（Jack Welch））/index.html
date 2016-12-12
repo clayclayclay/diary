@@ -1,51 +1,272 @@
-extends base
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>《赢》（杰克·韦尔奇（Jack Welch）） | Hexo</title>
+  <meta name="author" content="John Doe">
+  
+  <meta name="description" content="韦尔奇是美国通用汽车公司的一大传奇领导人物，他的六西格玛管理理念深入人心。他认为身为管理者，应当肩负起一项责任—充分发挥其他人身上最好的潜质">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-block title
-  title= page.title + ' | ' + config.title
+  <meta property="og:title" content="《赢》（杰克·韦尔奇（Jack Welch））"/>
+  <meta property="og:site_name" content="Hexo"/>
 
-block content
-  .post
-    h1.post-title= page.title
-    .post-meta= page.date.format('ll')
-      if page.categories.length > 0
-        span= ' | '
-        span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
-      if theme.busuanzi == true
-        script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
-    if theme.duoshuo
-      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content)
-    .post-content
-      != page.content
-    if theme.shareto == true
-      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
-      a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}')= __('shareto')
-    include _partial/tag
-    include _partial/post_nav
-    if theme.duoshuo
-      div(class='ds-share flat' data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
-         .ds-share-inline
-            ul.ds-share-icons-16
-              li(data-toggle='ds-share-icons-more')
-                a(class='ds-more' href='javascript:void(0);') 分享到：
-              li
-                a(class='ds-weibo' href='javascript:void(0);' data-service='weibo') 微博
-              li
-                a(class='ds-qzone' href='javascript:void(0);' data-service='qzone') QQ空间
-              li
-                a(class='ds-qqt' href='javascript:void(0);' data-service='qqt') 腾讯微博
-              li
-                a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
-            .ds-share-icons-more
-    include _partial/comments
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Hexo</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-03-14T08:41:07.000Z"><a href="/2016/03/14/《赢》（杰克·韦尔奇（Jack Welch））/">2016-03-14</a></time>
+      
+      
+  
+    <h1 class="title">《赢》（杰克·韦尔奇（Jack Welch））</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>韦尔奇是美国通用汽车公司的一大传奇领导人物，他的六西格玛管理理念深入人心。他认为身为管理者，应当肩负起一项责任—充分发挥其他人身上最好的潜质<br><a id="more"></a></p>
+<h4 id="一、领导力"><a href="#一、领导力" class="headerlink" title="一、领导力"></a>一、领导力</h4><blockquote>
+<p>担任领导并不意味着给你授予了王冠，而是给你赋予了一项职责—使其他人身上最好的潜质发挥出来。</p>
+</blockquote>
+<p>作为一位领导，首要任务就是带领自己的团队提升业绩，那么如何实现这个目标？最常见的办法就是，提升整个团队的水平，提高技术以降低成本，打造团队文化，提高管理水平等等。</p>
+<p>但是，我觉得，在这种生产活动中，人还是主体，而且自己手底下广大的员工是主体。活是由他们干的，他们是整个生产活动的参与者和见证者。我觉得，韦尔奇先生也是基于这个理念，才提出，领导担负的一项职责就是—负责把其他人身上的潜质发挥出来。这句话听起来有点大，激发潜质，提升能力。但是具体怎么做呢？其实具体的做法在韦尔奇先生的书中也有提过，大致有以下几点：</p>
+<ol>
+<li><p>充分尊重员工</p>
+</li>
+<li><p>按照20-70-10的理论将员工分成三种不同的类型，对20%的员工进行充分的奖励，对大部分，也就是70%的员工进行不断的鼓励，而剩下的10%的员工，则无任何商量的余地，直接走人。</p>
+</li>
+<li><p>学会打理好自己与下属的关系，但是不要过于亲近。</p>
+</li>
+</ol>
+<blockquote>
+<p>对于自己的错误，你没有必要念念不忘，或者感到伤心郁闷。实际上，你越是幽默一点，无忧无虑一点，就越能够从中吸取教训。犯错误不是毁灭性的。</p>
+<p>我到现在还认为，不是说自己越幽默，就会对所犯的错误更释怀。而是首先可以做到对自己错误的坦然，释怀，才可以接着做到幽默，无忧无虑以及自嘲。不过我很高兴的是，目前我也走在对自己宽容的道路上，一个人不可能不犯错，即使犯了错，也不会天塌下来的错，要知道，大一的学妹可是给我上过一课：世界上没有完全的死胡同。而且，老子现在正值青春时期，有的是精力，犯了错也有弥补的机会，所以，不虚！</p>
+</blockquote>
+<h4 id="二、招聘"><a href="#二、招聘" class="headerlink" title="二、招聘"></a>二、招聘</h4><blockquote>
+<p>顺便提一句，任何年龄的人，都可能很成熟，也有可能还不够成熟。但无论怎么说，都有些可以标志一个人是否长大的特征：能够控制怒火、承受压力和挫折，或者反过来，在自己功成名就的美妙时刻，能够喜悦但不失谦逊地享受成功的乐趣。成熟的人知道尊重别人的情感，他们充满自信但并不傲慢无礼。</p>
+<p>实际上，成熟的人通常都有一种幽默感，特别是对自己！</p>
+</blockquote>
+<p>上了大学自己也一直在思考这个问题，自己是否足够成熟，如果不是，怎样才能够让自己成熟起来。经过了一年半的思考和观察，觉得自己的确还不够成熟。主要表现有以下几点：</p>
+<ol>
+<li><p>自己喜欢开别人的玩笑，但是当别人开自己的玩笑的时候，容易激动啊，生气的。</p>
+</li>
+<li><p>看待事情有时候容易走极端。</p>
+</li>
+<li><p>在公众场合怯场，紧张。</p>
+</li>
+</ol>
+<p>不过随着时间的推移，也逐渐发现自己在成长，进步。上边说的三种情况都出现很少了。究其原因，经历有很大一部分原因，见得多了，而且也在不断地学习，从书本中，从外界中。</p>
+<h4 id="三、GE招聘所看重的的“4E和1P”计划"><a href="#三、GE招聘所看重的的“4E和1P”计划" class="headerlink" title="三、GE招聘所看重的的“4E和1P”计划"></a>三、GE招聘所看重的的“4E和1P”计划</h4><blockquote>
+<p>4E：</p>
+<p>1.Energy：积极向上的活力</p>
+<p>2.Energize：激励别人的能力</p>
+<p>3.Edge：决断力</p>
+<p>4.Execute：执行力</p>
+<p>1P：</p>
+<p>Passion：激情</p>
+</blockquote>
+<h4 id="四、企业危机管理的五条执行原则"><a href="#四、企业危机管理的五条执行原则" class="headerlink" title="四、企业危机管理的五条执行原则"></a>四、企业危机管理的五条执行原则</h4><blockquote>
+<p>第一，假设问题本身要比表现出来的更糟糕。</p>
+<p>第二，假设这个世界上并不存在秘密，每个人最终都会知道一切事情的真相。</p>
+<p>第三，假设你和自己的组织对危机的处理将被别人以最敌对的态度描述出来。</p>
+<p>第四，假设在危机处理过程中，有关的人和事会产生变化。</p>
+<p>第五，假设你的组织将从危机中挺过来，而且会因为经历了考验而变得强壮。</p>
+</blockquote>
+<p>其实这里边的第一，第四，第五在我们人生成长经历中也具有一定的现实意义，仔细想想，也会有所启示的。在学习上，不应该经常自我满足，要把目标定的高一点，而且周围一定有人比自己要牛逼。当然，这也一定程度上也会给自己带来一定的压力，但是，还是那句话，尽全力就好，玩得开心就好。</p>
+<h4 id="五、有机的成长"><a href="#五、有机的成长" class="headerlink" title="五、有机的成长"></a>五、有机的成长</h4><blockquote>
+<p>总结起来，那些公司在启动新业务时有三个常见的错误。</p>
+<p>1.他们没有给新项目足够的投资，特别是对于业务第一线的人员</p>
+<p>2.他们对新项目的前景和重要性宣传得太少。事实上，很多人不但没有为新项目的潜力欢呼，反而保持秘而不宣的状态。</p>
+<p>3.他们限制了新项目的自由权。</p>
+</blockquote>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/读书/">读书</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/企业/">企业</a>, <a href="/tags/管理/">管理</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://yoursite.com/2016/03/14/《赢》（杰克·韦尔奇（Jack Welch））/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">Kategorien</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/个人思考/">个人思考</a><small>4</small></li>
+  
+    <li><a href="/categories/实习实训/">实习实训</a><small>1</small></li>
+  
+    <li><a href="/categories/日记/">日记</a><small>2</small></li>
+  
+    <li><a href="/categories/读书/">读书</a><small>3</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/人性/">人性</a><small>1</small></li>
+  
+    <li><a href="/tags/企业/">企业</a><small>1</small></li>
+  
+    <li><a href="/tags/企业家/">企业家</a><small>1</small></li>
+  
+    <li><a href="/tags/创业/">创业</a><small>1</small></li>
+  
+    <li><a href="/tags/反思/">反思</a><small>2</small></li>
+  
+    <li><a href="/tags/国庆游玩/">国庆游玩</a><small>1</small></li>
+  
+    <li><a href="/tags/大学班会/">大学班会</a><small>1</small></li>
+  
+    <li><a href="/tags/实训实习/">实训实习</a><small>1</small></li>
+  
+    <li><a href="/tags/开放/">开放</a><small>1</small></li>
+  
+    <li><a href="/tags/思考/">思考</a><small>3</small></li>
+  
+    <li><a href="/tags/总结体会/">总结体会</a><small>1</small></li>
+  
+    <li><a href="/tags/母爱/">母爱</a><small>1</small></li>
+  
+    <li><a href="/tags/管理/">管理</a><small>1</small></li>
+  
+    <li><a href="/tags/经济/">经济</a><small>1</small></li>
+  
+    <li><a href="/tags/耐心/">耐心</a><small>1</small></li>
+  
+    <li><a href="/tags/自信/">自信</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 John Doe
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

@@ -1,51 +1,222 @@
-extends base
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>对于制定计划的一些思考 | Hexo</title>
+  <meta name="author" content="John Doe">
+  
+  <meta name="description" content="从粗略到制定计划，到不相信计划，再到重新意识到计划的重要性。这篇文章是我对过往的总结。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-block title
-  title= page.title + ' | ' + config.title
+  <meta property="og:title" content="对于制定计划的一些思考"/>
+  <meta property="og:site_name" content="Hexo"/>
 
-block content
-  .post
-    h1.post-title= page.title
-    .post-meta= page.date.format('ll')
-      if page.categories.length > 0
-        span= ' | '
-        span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
-      if theme.busuanzi == true
-        script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
-    if theme.duoshuo
-      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content)
-    .post-content
-      != page.content
-    if theme.shareto == true
-      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
-      a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}')= __('shareto')
-    include _partial/tag
-    include _partial/post_nav
-    if theme.duoshuo
-      div(class='ds-share flat' data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
-         .ds-share-inline
-            ul.ds-share-icons-16
-              li(data-toggle='ds-share-icons-more')
-                a(class='ds-more' href='javascript:void(0);') 分享到：
-              li
-                a(class='ds-weibo' href='javascript:void(0);' data-service='weibo') 微博
-              li
-                a(class='ds-qzone' href='javascript:void(0);' data-service='qzone') QQ空间
-              li
-                a(class='ds-qqt' href='javascript:void(0);' data-service='qqt') 腾讯微博
-              li
-                a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
-            .ds-share-icons-more
-    include _partial/comments
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Hexo</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-03-14T06:57:13.000Z"><a href="/2016/03/14/对于制定计划的一些思考/">2016-03-14</a></time>
+      
+      
+  
+    <h1 class="title">对于制定计划的一些思考</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>从粗略到制定计划，到不相信计划，再到重新意识到计划的重要性。这篇文章是我对过往的总结。<br><a id="more"></a></p>
+<p>&emsp;&emsp;反思：</p>
+<p>&emsp;&emsp;在高中的时候，三年的时间内也给自己制定了许多的计划，有些早早就破产了，有些还坚持了一定的时间。在大学的前一年，突然觉得制定计划这件事本身就是特别扯淡 的事情，每天会发生各种各样的事情，今天的事情是什么样子我不会知道，明天的后天的，一个星期之内的，一个月之内的，甚至一年以后，五年以后，我都不知 道，而且，我怎么去知道，这是无法办到的事情。于是，大一的一年，我就过起了日出而作，日落而息的生活，每天就这样想起什么事情做什么事情，该上课去上 课，闲着没事了，看几集电视剧，看部电影，玩会游戏，打会篮球，曾经一度还挺喜欢这种生活方式的。后来，时间一长，我有了一种虚度光阴，浪费时间，啥事都 没做成的感觉。到了大二上学期的前半段时间，也还是不太想去制定计划。直到最近，我开始重新思考，审视这个问题。我想，我之所以再次回头来想这件事情，也 不完全是受了外界的影响，但肯定还是受到了一定的影响，但最关键的却是自己内心认知的改变。我感觉自己长到了如今这个年龄阶段，感觉心智也在日渐成熟，对 一些事情也有了自己较为成熟的看法，制定计划这件事情也同样是我觉得应该去再次把它给捡起来，去做好的。回到之前所说的那个问题，事情是无法预料的，今天 会发生什么，以后会发生什么，这也是我所不能掌控的。但是，计划还是要有，它是你在今天，这周，这个月，这一年，这五年的一个大致的行为规划。的确，每天 发生的事情会干扰到自己计划的正常进行，这也是自己之前一直没有坚持下去的原因，计划受到了打扰，本来今天做的事情推到了明天，明天的事情推到了后天，一 件事情压着一件事情，让你突然感觉面前出现了一个庞然大物，锯齿猛兽。当这些情况出现的时候，你如何对待他们，如果去重新安排计划则取决于你自己的智慧 了。按照自己制定的计划执行下去，能够让自己察觉每天都有所收获，内心很充实，不至于每天过的浑浑噩噩的，每天都能够清楚自己在干什么，同时也能够通过计 划来见证自己一步一步的成长。我想，目前发生在我身上的这一切，就叫做所谓的成长吧。</p>
+<p>&emsp;&emsp;制定计划前需要考虑到的一些阻力因素：</p>
+<p>&emsp;&emsp;制定计划很容易，只要日子能算清楚，知道一天有多少个小时就就行了。但是执行计划，却远远没有那么容易。在执行计划中，阻碍自己前行的因素无非就是各种大大 小小的事情。比如：朋友约吃饭、今天心情不好，什么都不想做，生病，感冒了。补作业，做给自己揽的一些大大小小的事情。这些事情随时都有可能发生，但是咱不怂。能够即时的调整计划才是关键!</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/个人思考/">个人思考</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/思考/">思考</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://yoursite.com/2016/03/14/对于制定计划的一些思考/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">Kategorien</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/个人思考/">个人思考</a><small>4</small></li>
+  
+    <li><a href="/categories/实习实训/">实习实训</a><small>1</small></li>
+  
+    <li><a href="/categories/日记/">日记</a><small>2</small></li>
+  
+    <li><a href="/categories/读书/">读书</a><small>3</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/人性/">人性</a><small>1</small></li>
+  
+    <li><a href="/tags/企业/">企业</a><small>1</small></li>
+  
+    <li><a href="/tags/企业家/">企业家</a><small>1</small></li>
+  
+    <li><a href="/tags/创业/">创业</a><small>1</small></li>
+  
+    <li><a href="/tags/反思/">反思</a><small>2</small></li>
+  
+    <li><a href="/tags/国庆游玩/">国庆游玩</a><small>1</small></li>
+  
+    <li><a href="/tags/大学班会/">大学班会</a><small>1</small></li>
+  
+    <li><a href="/tags/实训实习/">实训实习</a><small>1</small></li>
+  
+    <li><a href="/tags/开放/">开放</a><small>1</small></li>
+  
+    <li><a href="/tags/思考/">思考</a><small>3</small></li>
+  
+    <li><a href="/tags/总结体会/">总结体会</a><small>1</small></li>
+  
+    <li><a href="/tags/母爱/">母爱</a><small>1</small></li>
+  
+    <li><a href="/tags/管理/">管理</a><small>1</small></li>
+  
+    <li><a href="/tags/经济/">经济</a><small>1</small></li>
+  
+    <li><a href="/tags/耐心/">耐心</a><small>1</small></li>
+  
+    <li><a href="/tags/自信/">自信</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 John Doe
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
