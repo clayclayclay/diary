@@ -1,51 +1,293 @@
-extends base
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>从《大败局》中得到的思考 | 记录生活</title>
+  <meta name="author" content="Max">
+  
+  <meta name="description" content="这是一本回顾，分析，反思中国90-00年代一些知名企业失败的故事。中国改革开放的春风刚刚吹响了华夏大地，各路英雄好汉纷纷下海经商。他们中的一些成功了，一些却失败了。那么原因就什么呢？">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-block title
-  title= page.title + ' | ' + config.title
+  <meta property="og:title" content="从《大败局》中得到的思考"/>
+  <meta property="og:site_name" content="记录生活"/>
 
-block content
-  .post
-    h1.post-title= page.title
-    .post-meta= page.date.format('ll')
-      if page.categories.length > 0
-        span= ' | '
-        span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
-      if theme.busuanzi == true
-        script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
-    if theme.duoshuo
-      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content)
-    .post-content
-      != page.content
-    if theme.shareto == true
-      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
-      a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}')= __('shareto')
-    include _partial/tag
-    include _partial/post_nav
-    if theme.duoshuo
-      div(class='ds-share flat' data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
-         .ds-share-inline
-            ul.ds-share-icons-16
-              li(data-toggle='ds-share-icons-more')
-                a(class='ds-more' href='javascript:void(0);') 分享到：
-              li
-                a(class='ds-weibo' href='javascript:void(0);' data-service='weibo') 微博
-              li
-                a(class='ds-qzone' href='javascript:void(0);' data-service='qzone') QQ空间
-              li
-                a(class='ds-qqt' href='javascript:void(0);' data-service='qqt') 腾讯微博
-              li
-                a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
-            .ds-share-icons-more
-    include _partial/comments
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link rel="alternate" href="/atom.xml" title="记录生活" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <!-- wumiiVerification -->
+  <meta name="wumiiVerification" content="fb50a101-84fe-4ca2-91a7-ae8cf792978b" />
+  <meta name="wumiiVerification" content="d73b5866-c390-4156-a4dd-51b526b5335e" />
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <header id="header"><div class= "header-content inner">
+	<div class = "alignleft col-one">
+		
+			<div class='avatar'>
+				<img src = "/img/room.jpg">
+              </div>
+		
+		<div class="header-div">
+		    <h1><a href="/">记录生活</a></h1>
+		    <h2><a href="/"></a></h2>
+		</div>
+	</div>
+	<div class = "alignright col-two">
+		
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<div class= "header-nav">
+	<div class='header-nav-content inner'>
+		<div id="main-nav" class="alignleft">
+		    		
+		    		  <a href="/"><i class="fa fa-home"></i>Home</a>
+		    		
+		    		  <a href="/archives"><i class="fa fa-archive"></i>Archives</a>
+		    		
+		    		  <a href="/about"><i class="fa fa-user"></i>About</a>
+		    		
+		</div>
+		<div id="sub-nav" class="alignright">
+		    
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+</header>
+  
+    <div id="content" class="inner">
+      <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2016-04-06T02:44:19.000Z"><a href="/2016/04/06/从《大败局》中得到的思考/">2016-04-06</a></time>
+        
+  
+    <h1 class="title">从《大败局》中得到的思考</h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        
+    <div id="toc">
+        
+    </div>
+
+        <p>这是一本回顾，分析，反思中国90-00年代一些知名企业失败的故事。中国改革开放的春风刚刚吹响了华夏大地，各路英雄好汉纷纷下海经商。他们中的一些成功了，一些却失败了。那么原因就什么呢？<br><a id="more"></a></p>
+<p>&emsp;&emsp;今天读了吴晓波先生写的《大败局》，是在上”信息检索”课的时候看的。也只有在这种简单一点的，不太重要的课程上才能够拿出一点时间来看书，否则白天自己很难说服自己拿出一个小时，甚至是半个小时来看书，以至于每次看书都到了熄灯之后，不过熄灯之后看也有它的好处，就是安静，能够冷静地思考，分析一些事情。但是也有一些问题，那就是，没看多长时间就会有困意了，而且在遇上冷一点的天气，穿得也比较薄，也不想一直被冻着，以至于每天这个时候看书的时间是很短的，而且效率也是很不高的。所以，目前看书这个计划的执行对我来说，总是磕磕绊绊，不能够令自己十分满意。</p>
+<p>&emsp;&emsp;今天在《大败局》中，看到了许多的企业失败的实例，不过他们也曾都成功过。印象最深的应该是三株集团的实例了，其是一家保健品公司，主营三株口服液。公司的领导人是吴炳新和他的儿子吴思伟。吴炳新经营公司的理念倾向于军事化，喜欢毛爷爷那一套“农村包围城市”的军事理论，并主打企业经营的口号：以振兴民族工业为己任，要成为中国第一纳税人等。在宣传战略上，也是广告铺天盖地，报纸上，电视上，以及农村各个角落，只要是有空地的地方，都让宣传员拿着油漆给刷上了广告，甚至是厕所（23333）。不过有一点比较有意思，也属于他的聪明之作，那就是他在报纸上，电视上做的广告从来都不是以广告的形象来出现的，比如在报纸上，他出钱让报社刊以文章的形式刊登在正文，而不是刊登广告的那部分。在电视上，也不是出现在插播广告的时间中，也同样是以科教，生活养生之类的身份出现。其实之所以能这样做，也与他的另一经营理念”官商共同利益体”密切相关。初期由于广告效应，取得了惊人的成绩，96年公司总销售额达80亿。而最终该公司的失败一方面有其内部管理体制的问题，人员冗杂，官僚氛围浓厚，管理混乱，资金乱铺等等，在外因则是由一起比较著名的事件所造成:八瓶三株口服液喝死一老汉。（不过最后三株公司在二次诉讼中打赢了官司，证明第一次的事件并没有直接的证据证明三株口服液有任何问题，而且三株口服液的质量也经由国家权威检测机构检测过，没有任何问题。）</p>
+<p>&emsp;&emsp;以上是我对三株公司兴衰的一次简单概括。这里边还是有一些细节没有说到。其中之一就是吴炳新这个人做生意真的是无所不用其极，在自己的产品宣传上，把功效说得跟灵丹妙药似的，都快上了天了，而且多次发布一些造假文章，说该公司的产品是由几位留美博士发明等等。而对对手则是用心之狠毒，伪造用户对于其他公司产品的评论来恶意诋毁地方，通过政治手段来遏制对手等等。</p>
+<p>&emsp;&emsp;有句话说的好，别人对你的态度取决于你对别人的态度。当三株集团日暮西山，其他同业也是幸灾乐祸，对其加以嘲笑和讽刺。我觉得，这种情况就是在90年代中国草根创业中普遍存在的一种情况，创业本人的确有着一番勇敢，敢干敢做的豪迈气概，有种梁山好汉的那种气概，但是就像本书里边说的那样，却缺少一种社会的责任感和使命感。在那种各种法律法规不够完善的时代里，有着各种发家致富的门道的时代里，每一个人都像被金钱冲昏了头脑一样，只顾着自己大把大把地捞钱，而没有一种真正存在于心的社会责任感，换句话说，就是没有把整个社会经济的秩序给制订好，维护好，只是想着捞钱，捞钱，再捞钱。那个年代的人们，很浮躁，也很冲动。而今这个年代的人们，包括我自己，隐隐约约也能够感觉到一种内心的浮躁，而不是那种理智的做事冲动。</p>
+<p>&emsp;&emsp;如何才能不浮躁，才能称沉下心来做事，光说不行，一定要有思考，但更要有实际的行动。仔细一想，先如今这个社会的浮躁体现在哪?学术论文频现造假，沉不下心来搞研究，只想一步一步晋升。创业团队炒作概念，就想获得融资等。对于社会上的这些事前，关注的也不是特别的多，所以自己在这里也举不出太多的例子，但是以后也会多多关注一些社会动态，并不断地去思考其背后所折射出来的东西。对于自己来说，也略有浮躁，很明显的一点就是经常把学习技术当成自己的唯一的目的，感觉自己在空闲时间去做点其他事情，比如跑步，看书，打球，看电影就经常隐隐约约觉得是在浪费时间，觉得不去学习技术，就会没有竞争力，跑不赢别人等。可是我也逐渐在明白，除了学习技术，我还有其他同样重要的事情要做，一个人的成长，也绝对不单单是靠技术堆起来的，技术，只是自己以后养家糊口的一个基本技能，而其他方面的培养，提升，则是更大程度地拓宽了自己的道路。所以，没有啥事情就早睡，为了身体，长时间学习过了，就去锻炼会，为了身体，这一周都在学习，周末就去放松放松，为了身体，同样也是为了自己以后能够更好地去学习，去提升自己。另外一点就是，不要在这物欲横流的现实世界上迷失了自己，永远也不要让别人的话语左右自己的看法，思考，处事方式。只做你自己的，大步向前冲，就行了。</p>
+<blockquote>
+<p>我们发现，在中国乃至世界企业圈中，能够独立门户、开疆拓土的一代宗师们，几乎都没有太高的学历背景。因为往往学历越高、读书越多，便越具有理性精神，在机遇稍纵即逝的商海中，瞻前顾后，举棋不定，缺乏在大风大浪中豪情一搏的创业激情。而那些学历不高者，则顾忌较少，敢想敢为，埋头一冲，或许真的能一跃而出，开创出一片新天地来。</p>
+<p>  —巨人：请人民作证</p>
+<p>  死抱住所谓的技术创新而忽略市场需求，这是工业时代生产方式的通病。令人遗憾的是，当今很多高科技领域的企业也常常会违反妇孺皆知的市场法则而重蹈覆辙。</p>
+<p>  对于一家像瀛海威这样身处产业成长最前沿的领跑型企业而言，其最大的危险时它似乎比客户更“知道”市场应该是什么样子的，它的领导者往往把一些进程中的意外看成是对自己的预测能力和专业知识的侮辱而加以拒绝。他们没有想到，正是这些意外倒可能是发展的真正的方向。他们没有牢记这样的格言：企业不是要高傲地创造或改造市场，而是要千方百计地满足市场。</p>
+<p>  —瀛海威：在大雾中领跑</p>
+<p>  就企业而言，除非它始终处在一种永动的创造热浪中，它不断有轰动性的、能够产生巨额利润的新产品问世，并且每一个新产品都拥有广阔的市场深度，而且还能够避开所有的人为或非人为的侵扰事件。否则，一个始终处于战斗状态的企业是无法维持长久的，它必然会产生疲态，必然会发生摩擦，必然陷入激情的过燃和早耗。</p>
+<p>  —三株：“帝国”为何如此脆弱</p>
+<p>  我们看到，像太阳神、哇哈哈这些在短缺经济状态中成长起来的新兴企业，在完成原始积累步入持续发展的时候，往往潜意识地产生扩张冒进的冲动，自以为无所不能：</p>
+<p>  一是“微观精明、宏观盲视”，企业家在规划企业发展蓝图时往往无视整个宏观经济的整体走向，根本不注意宏观经济的预期，以致造成中长远的经营策略与宏观经济走向相扭曲、相背离；</p>
+<p>  二是“自信过度、危机淡漠”，已往的成功使企业家对自己的决策和直觉过于自信，往往忽视市场变化，有时甚至有“领导市场、创造需求”的雄心壮志，似乎是它们企业的生产规模和发展方向决定着市场的走向，而不是市场决定它们的生产规模和发展方向；</p>
+<p>  三是“理想宏大、盲目扩张”，早期的草创经验使缺乏专业训练的企业家产生一种强烈的、百无畏惧的错觉，什么领域利润高就想进入什么领域，似乎它是万能的，什么经营活动都能搞，都敢搞，于是，盲目追求多元化便成了一个绕不过去的陷阱。</p>
+<p>  —太阳神：逝水难追“太阳神”</p>
+</blockquote>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/读书/">读书</a>
+  </div>
+
+        
+  <div class="tags">
+    <a href="/tags/经济/">经济</a>, <a href="/tags/创业/">创业</a>, <a href="/tags/企业家/">企业家</a>
+  </div>
+
+        <div class = "counter">
+  <span id="busuanzi_container_page_pv" style="display:none">
+      总访问&nbsp<span id="busuanzi_value_page_pv"></span>&nbsp次
+  </span>
+</div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+  
+<section id = "relate">
+	
+</section>
+
+
+  
+    <section id="comment">
+    <!--   <h1 class="title">Comments</h1> -->
+    
+    
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="2016/04/06/从《大败局》中得到的思考/" data-title="从《大败局》中得到的思考" data-url="http://yoursite.com/2016/04/06/从《大败局》中得到的思考/"></div>
+        <!-- 多说评论框 end -->
+        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+        <script type="text/javascript">
+        var duoshuoQuery = {short_name:"MaxBlog"};
+          (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+          })();
+          </script>
+        <!-- 多说公共JS代码 end -->
+
+      
+    </section>
+
+
+
+
+</div></div>
+      <aside id="sidebar" class="alignright">
+  
+<div class="widget tag">
+  <h3 class="title" id="categories">Categories</h3>
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/个人思考/">个人思考</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/实习实训/">实习实训</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日常/">日常</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日记/">日记</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书/">读书</a><span class="category-list-count">3</span></li></ul> 
+</div>
+ 
+
+
+  
+<div class="widget">
+  <h3 class="title">最新评论</h3>
+  	<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments ds-recent-user" data-num-items="3" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+	<!-- 多说最新评论 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"MaxBlog"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">Tag Cloud</h3>
+  <div class="entry">
+    <a href="/tags/人性/" style="font-size: 10px;">人性</a> <a href="/tags/企业/" style="font-size: 10px;">企业</a> <a href="/tags/企业家/" style="font-size: 10px;">企业家</a> <a href="/tags/创业/" style="font-size: 10px;">创业</a> <a href="/tags/反思/" style="font-size: 15px;">反思</a> <a href="/tags/国庆游玩/" style="font-size: 10px;">国庆游玩</a> <a href="/tags/大学班会/" style="font-size: 10px;">大学班会</a> <a href="/tags/实训实习/" style="font-size: 10px;">实训实习</a> <a href="/tags/开放/" style="font-size: 10px;">开放</a> <a href="/tags/思考/" style="font-size: 20px;">思考</a> <a href="/tags/总结体会/" style="font-size: 10px;">总结体会</a> <a href="/tags/母爱/" style="font-size: 10px;">母爱</a> <a href="/tags/管理/" style="font-size: 10px;">管理</a> <a href="/tags/经济/" style="font-size: 10px;">经济</a> <a href="/tags/耐心/" style="font-size: 10px;">耐心</a> <a href="/tags/自信/" style="font-size: 10px;">自信</a> <a href="/tags/行动/" style="font-size: 10px;">行动</a>
+  </div>
+</div>
+
+
+  
+  <div class="widget tag">
+    <h3 class="title">归档</h3>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">2016年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">2016年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">2016年08月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">2016年04月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">2016年03月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">2015年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">2015年11月</a><span class="archive-list-count">1</span></li></ul>
+  </div>
+
+</aside>
+      <div class="clearfix"></div>
+    </div>
+  
+  <footer id="footer"><div class="footer-content inner">
+  <div class="alignleft">
+  
+    &copy; 2016 Max
+    
+  </div>
+  <div class="alignright">
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme
+    <a href="https://github.com/pengloo53/Hexo-theme-light_cn">light_cn</a>
+  </div>
+  
+  <div class="visit">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </div>
+  
+  <div class="clearfix"></div>
+</div></footer>
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<!-- calendar widget -->
+
+
+<!-- 『不蒜子』计数服务 -->
+<script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- wumii关联推荐 -->
+<script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
+
+<!-- 百度推荐 -->
+
+
+<!-- 返回顶部 -->
+<div id="toTop">
+	<a href="#">▲</a>
+	<a href="#footer">▼</a>
+</div>
+
+<!-- 站内搜索-Swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','sC-iNFrvTTNtiXEVNwo1','2.0.0');
+</script>
+
+<!-- fancybox -->
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body>
+</html>

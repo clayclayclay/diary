@@ -1,51 +1,278 @@
-extends base
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>对于制定计划的一些思考 | 记录生活</title>
+  <meta name="author" content="Max">
+  
+  <meta name="description" content="从粗略到制定计划，到不相信计划，再到重新意识到计划的重要性。这篇文章是我对过往的总结。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-block title
-  title= page.title + ' | ' + config.title
+  <meta property="og:title" content="对于制定计划的一些思考"/>
+  <meta property="og:site_name" content="记录生活"/>
 
-block content
-  .post
-    h1.post-title= page.title
-    .post-meta= page.date.format('ll')
-      if page.categories.length > 0
-        span= ' | '
-        span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
-      if theme.busuanzi == true
-        script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
-    if theme.duoshuo
-      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content)
-    .post-content
-      != page.content
-    if theme.shareto == true
-      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
-      a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}')= __('shareto')
-    include _partial/tag
-    include _partial/post_nav
-    if theme.duoshuo
-      div(class='ds-share flat' data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
-         .ds-share-inline
-            ul.ds-share-icons-16
-              li(data-toggle='ds-share-icons-more')
-                a(class='ds-more' href='javascript:void(0);') 分享到：
-              li
-                a(class='ds-weibo' href='javascript:void(0);' data-service='weibo') 微博
-              li
-                a(class='ds-qzone' href='javascript:void(0);' data-service='qzone') QQ空间
-              li
-                a(class='ds-qqt' href='javascript:void(0);' data-service='qqt') 腾讯微博
-              li
-                a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
-            .ds-share-icons-more
-    include _partial/comments
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link rel="alternate" href="/atom.xml" title="记录生活" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <!-- wumiiVerification -->
+  <meta name="wumiiVerification" content="fb50a101-84fe-4ca2-91a7-ae8cf792978b" />
+  <meta name="wumiiVerification" content="d73b5866-c390-4156-a4dd-51b526b5335e" />
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <header id="header"><div class= "header-content inner">
+	<div class = "alignleft col-one">
+		
+			<div class='avatar'>
+				<img src = "/img/room.jpg">
+              </div>
+		
+		<div class="header-div">
+		    <h1><a href="/">记录生活</a></h1>
+		    <h2><a href="/"></a></h2>
+		</div>
+	</div>
+	<div class = "alignright col-two">
+		
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<div class= "header-nav">
+	<div class='header-nav-content inner'>
+		<div id="main-nav" class="alignleft">
+		    		
+		    		  <a href="/"><i class="fa fa-home"></i>Home</a>
+		    		
+		    		  <a href="/archives"><i class="fa fa-archive"></i>Archives</a>
+		    		
+		    		  <a href="/about"><i class="fa fa-user"></i>About</a>
+		    		
+		</div>
+		<div id="sub-nav" class="alignright">
+		    
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+</header>
+  
+    <div id="content" class="inner">
+      <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2016-03-14T06:57:13.000Z"><a href="/2016/03/14/对于制定计划的一些思考/">2016-03-14</a></time>
+        
+  
+    <h1 class="title">对于制定计划的一些思考</h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        
+    <div id="toc">
+        
+    </div>
+
+        <p>从粗略到制定计划，到不相信计划，再到重新意识到计划的重要性。这篇文章是我对过往的总结。<br><a id="more"></a></p>
+<p>&emsp;&emsp;反思：</p>
+<p>&emsp;&emsp;在高中的时候，三年的时间内也给自己制定了许多的计划，有些早早就破产了，有些还坚持了一定的时间。在大学的前一年，突然觉得制定计划这件事本身就是特别扯淡 的事情，每天会发生各种各样的事情，今天的事情是什么样子我不会知道，明天的后天的，一个星期之内的，一个月之内的，甚至一年以后，五年以后，我都不知 道，而且，我怎么去知道，这是无法办到的事情。于是，大一的一年，我就过起了日出而作，日落而息的生活，每天就这样想起什么事情做什么事情，该上课去上 课，闲着没事了，看几集电视剧，看部电影，玩会游戏，打会篮球，曾经一度还挺喜欢这种生活方式的。后来，时间一长，我有了一种虚度光阴，浪费时间，啥事都 没做成的感觉。到了大二上学期的前半段时间，也还是不太想去制定计划。直到最近，我开始重新思考，审视这个问题。我想，我之所以再次回头来想这件事情，也 不完全是受了外界的影响，但肯定还是受到了一定的影响，但最关键的却是自己内心认知的改变。我感觉自己长到了如今这个年龄阶段，感觉心智也在日渐成熟，对 一些事情也有了自己较为成熟的看法，制定计划这件事情也同样是我觉得应该去再次把它给捡起来，去做好的。回到之前所说的那个问题，事情是无法预料的，今天 会发生什么，以后会发生什么，这也是我所不能掌控的。但是，计划还是要有，它是你在今天，这周，这个月，这一年，这五年的一个大致的行为规划。的确，每天 发生的事情会干扰到自己计划的正常进行，这也是自己之前一直没有坚持下去的原因，计划受到了打扰，本来今天做的事情推到了明天，明天的事情推到了后天，一 件事情压着一件事情，让你突然感觉面前出现了一个庞然大物，锯齿猛兽。当这些情况出现的时候，你如何对待他们，如果去重新安排计划则取决于你自己的智慧 了。按照自己制定的计划执行下去，能够让自己察觉每天都有所收获，内心很充实，不至于每天过的浑浑噩噩的，每天都能够清楚自己在干什么，同时也能够通过计 划来见证自己一步一步的成长。我想，目前发生在我身上的这一切，就叫做所谓的成长吧。</p>
+<p>&emsp;&emsp;制定计划前需要考虑到的一些阻力因素：</p>
+<p>&emsp;&emsp;制定计划很容易，只要日子能算清楚，知道一天有多少个小时就就行了。但是执行计划，却远远没有那么容易。在执行计划中，阻碍自己前行的因素无非就是各种大大 小小的事情。比如：朋友约吃饭、今天心情不好，什么都不想做，生病，感冒了。补作业，做给自己揽的一些大大小小的事情。这些事情随时都有可能发生，但是咱不怂。能够即时的调整计划才是关键!</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/个人思考/">个人思考</a>
+  </div>
+
+        
+  <div class="tags">
+    <a href="/tags/思考/">思考</a>
+  </div>
+
+        <div class = "counter">
+  <span id="busuanzi_container_page_pv" style="display:none">
+      总访问&nbsp<span id="busuanzi_value_page_pv"></span>&nbsp次
+  </span>
+</div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+  
+<section id = "relate">
+	
+</section>
+
+
+  
+    <section id="comment">
+    <!--   <h1 class="title">Comments</h1> -->
+    
+    
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="2016/03/14/对于制定计划的一些思考/" data-title="对于制定计划的一些思考" data-url="http://yoursite.com/2016/03/14/对于制定计划的一些思考/"></div>
+        <!-- 多说评论框 end -->
+        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+        <script type="text/javascript">
+        var duoshuoQuery = {short_name:"MaxBlog"};
+          (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+          })();
+          </script>
+        <!-- 多说公共JS代码 end -->
+
+      
+    </section>
+
+
+
+
+</div></div>
+      <aside id="sidebar" class="alignright">
+  
+<div class="widget tag">
+  <h3 class="title" id="categories">Categories</h3>
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/个人思考/">个人思考</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/实习实训/">实习实训</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日常/">日常</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日记/">日记</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书/">读书</a><span class="category-list-count">3</span></li></ul> 
+</div>
+ 
+
+
+  
+<div class="widget">
+  <h3 class="title">最新评论</h3>
+  	<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments ds-recent-user" data-num-items="3" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+	<!-- 多说最新评论 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"MaxBlog"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">Tag Cloud</h3>
+  <div class="entry">
+    <a href="/tags/人性/" style="font-size: 10px;">人性</a> <a href="/tags/企业/" style="font-size: 10px;">企业</a> <a href="/tags/企业家/" style="font-size: 10px;">企业家</a> <a href="/tags/创业/" style="font-size: 10px;">创业</a> <a href="/tags/反思/" style="font-size: 15px;">反思</a> <a href="/tags/国庆游玩/" style="font-size: 10px;">国庆游玩</a> <a href="/tags/大学班会/" style="font-size: 10px;">大学班会</a> <a href="/tags/实训实习/" style="font-size: 10px;">实训实习</a> <a href="/tags/开放/" style="font-size: 10px;">开放</a> <a href="/tags/思考/" style="font-size: 20px;">思考</a> <a href="/tags/总结体会/" style="font-size: 10px;">总结体会</a> <a href="/tags/母爱/" style="font-size: 10px;">母爱</a> <a href="/tags/管理/" style="font-size: 10px;">管理</a> <a href="/tags/经济/" style="font-size: 10px;">经济</a> <a href="/tags/耐心/" style="font-size: 10px;">耐心</a> <a href="/tags/自信/" style="font-size: 10px;">自信</a> <a href="/tags/行动/" style="font-size: 10px;">行动</a>
+  </div>
+</div>
+
+
+  
+  <div class="widget tag">
+    <h3 class="title">归档</h3>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">2016年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">2016年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">2016年08月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">2016年04月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">2016年03月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">2015年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">2015年11月</a><span class="archive-list-count">1</span></li></ul>
+  </div>
+
+</aside>
+      <div class="clearfix"></div>
+    </div>
+  
+  <footer id="footer"><div class="footer-content inner">
+  <div class="alignleft">
+  
+    &copy; 2016 Max
+    
+  </div>
+  <div class="alignright">
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme
+    <a href="https://github.com/pengloo53/Hexo-theme-light_cn">light_cn</a>
+  </div>
+  
+  <div class="visit">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </div>
+  
+  <div class="clearfix"></div>
+</div></footer>
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<!-- calendar widget -->
+
+
+<!-- 『不蒜子』计数服务 -->
+<script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- wumii关联推荐 -->
+<script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
+
+<!-- 百度推荐 -->
+
+
+<!-- 返回顶部 -->
+<div id="toTop">
+	<a href="#">▲</a>
+	<a href="#footer">▼</a>
+</div>
+
+<!-- 站内搜索-Swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','sC-iNFrvTTNtiXEVNwo1','2.0.0');
+</script>
+
+<!-- fancybox -->
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body>
+</html>

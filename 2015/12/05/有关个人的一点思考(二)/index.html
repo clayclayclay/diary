@@ -1,51 +1,292 @@
-extends base
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>有关个人的一点思考(二) | 记录生活</title>
+  <meta name="author" content="Max">
+  
+  <meta name="description" content="keep thinking">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-block title
-  title= page.title + ' | ' + config.title
+  <meta property="og:title" content="有关个人的一点思考(二)"/>
+  <meta property="og:site_name" content="记录生活"/>
 
-block content
-  .post
-    h1.post-title= page.title
-    .post-meta= page.date.format('ll')
-      if page.categories.length > 0
-        span= ' | '
-        span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
-      if theme.busuanzi == true
-        script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
-    if theme.duoshuo
-      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content)
-    .post-content
-      != page.content
-    if theme.shareto == true
-      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
-      a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}')= __('shareto')
-    include _partial/tag
-    include _partial/post_nav
-    if theme.duoshuo
-      div(class='ds-share flat' data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
-         .ds-share-inline
-            ul.ds-share-icons-16
-              li(data-toggle='ds-share-icons-more')
-                a(class='ds-more' href='javascript:void(0);') 分享到：
-              li
-                a(class='ds-weibo' href='javascript:void(0);' data-service='weibo') 微博
-              li
-                a(class='ds-qzone' href='javascript:void(0);' data-service='qzone') QQ空间
-              li
-                a(class='ds-qqt' href='javascript:void(0);' data-service='qqt') 腾讯微博
-              li
-                a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
-            .ds-share-icons-more
-    include _partial/comments
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link rel="alternate" href="/atom.xml" title="记录生活" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <!-- wumiiVerification -->
+  <meta name="wumiiVerification" content="fb50a101-84fe-4ca2-91a7-ae8cf792978b" />
+  <meta name="wumiiVerification" content="d73b5866-c390-4156-a4dd-51b526b5335e" />
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <header id="header"><div class= "header-content inner">
+	<div class = "alignleft col-one">
+		
+			<div class='avatar'>
+				<img src = "/img/room.jpg">
+              </div>
+		
+		<div class="header-div">
+		    <h1><a href="/">记录生活</a></h1>
+		    <h2><a href="/"></a></h2>
+		</div>
+	</div>
+	<div class = "alignright col-two">
+		
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<div class= "header-nav">
+	<div class='header-nav-content inner'>
+		<div id="main-nav" class="alignleft">
+		    		
+		    		  <a href="/"><i class="fa fa-home"></i>Home</a>
+		    		
+		    		  <a href="/archives"><i class="fa fa-archive"></i>Archives</a>
+		    		
+		    		  <a href="/about"><i class="fa fa-user"></i>About</a>
+		    		
+		</div>
+		<div id="sub-nav" class="alignright">
+		    
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+</header>
+  
+    <div id="content" class="inner">
+      <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2015-12-05T08:43:25.000Z"><a href="/2015/12/05/有关个人的一点思考(二)/">2015-12-05</a></time>
+        
+  
+    <h1 class="title">有关个人的一点思考(二)</h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        
+    <div id="toc">
+        
+    </div>
+
+        <p>keep thinking<br><a id="more"></a></p>
+<p>&emsp;&emsp;最近在自己身上发生了许多事情，感觉这也是一直存在于自己身上的问题，需要反思，总结一下。</p>
+<p>&emsp;&emsp;这篇文章的题目就把它定为：</p>
+<p>&emsp;&emsp; #####作出改变，学会虚心。</p>
+<p>&emsp;&emsp;在此之前，一直认为自己还是比较谦虚的，比较善于去向他人学习的。可是这几天发生了许多事情让我越发的觉得自己在向别人请教这方面还真的是不太擅长，内心隐隐约约总有一种孤傲的影子存在。</p>
+<p>&emsp;&emsp;首先来说一个别的问题：</p>
+<p>&emsp;&emsp;当我和别人共同面对一个棘手的问题，我的大脑总是会分出一份占比并不算太小的容量去考虑以下几个问题：</p>
+<p>&emsp;&emsp;1.别人比我先想出来，比我先解决怎么办</p>
+<p>&emsp;&emsp;2.别人比我先想出来，比我先解决，其他人会认为我是菜，很垃圾</p>
+<p>&emsp;&emsp;3.我想不出来，解决不了这个问题该怎么办？</p>
+<p>&emsp;&emsp;这些问题是我在面对这种情况的时候经常去首先（重点是首先）考虑的。</p>
+<p>&emsp;&emsp;从而往往造成的结果就是：我因为大脑的一部分在考虑这些问题，导致大脑并没有充分发挥出它应有的能力，最终我的确没有很好，甚至没有解决这个问题，而最终别人解决了这个问题了。这个时候，我就认为我的那些想法是正确的，的确就是这样，别人就是比我牛，比我吊，我就是比别人差，没有别人想的快。周而复始，我形成了这种思维定势的恶性循环。</p>
+<p>&emsp;&emsp;这个问题已经持续好长时间了，都可以用年为单位来统计了。</p>
+<p>&emsp;&emsp;但是到现在，随着自己的成长，自己所经历的事情越来越多，自身成长越来越成熟，对一些事情的认识也逐渐形成了自己的想法，现在的我是真真真觉得这种心态很糟糕，很不可取。感觉这种心态再持续下去就要完全把我给毁灭了。我是真的不想再去这样考虑问题了。我也是一个独立的人，一个有着自己大脑，有着自己思考的一个人，为什么我在思考的时候总要受制于人，总去考虑其他人怎么样，怎么样，为什么要那么关注外界的反应。我应该专注的，恰恰是自己的能力，自己的头脑，自己的智慧。在面对那道问题的时候，我想，其他的老子不管了。我现在所能做的就是集中我自己全部的注意力，充分调用自己的大脑来思考，解决这个棘手的问题。当结果出现的时候，无论我是否是那个最快想出解决办法的人，我都不会去懊恼，都不会急躁，都不会去沮丧，因为，我做到了我的最好。这样就足够了，我不在乎外界对自己的评价，我是为我自己而活的。借用许嵩的一句话：你要想清楚，你究竟是想做一个自己眼中最好的自己，还是做一个他人眼中最好的自己。</p>
+<p>&emsp;&emsp;第二个就是要说一下自己在请教他人这一方面所存在的问题。</p>
+<p>&emsp;&emsp;表现：内心的不十分情愿，急躁，急于去反驳别人来证明自己的正确性，怕被别人说自己菜。</p>
+<p>&emsp;&emsp;思考:你要找出，在你向别人请教的时候，究竟哪些东西才是你应该给予关注的？是面子？是别人对你的误解?还是自己的菜？这些都不是，最应该给予关注的是自己所请教的问题，自己所不知道的那些东西。</p>
+<p>&emsp;&emsp;再给自己提一个要求：经常微笑~</p>
+<p>&emsp;&emsp;俗话说相由心生，那么当我想要一个好的相的时候，那么我就会积极的去调整我的心，而且我知道，微笑带给人的感觉非同寻常~</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/个人思考/">个人思考</a>
+  </div>
+
+        
+  <div class="tags">
+    <a href="/tags/思考/">思考</a>, <a href="/tags/反思/">反思</a>
+  </div>
+
+        <div class = "counter">
+  <span id="busuanzi_container_page_pv" style="display:none">
+      总访问&nbsp<span id="busuanzi_value_page_pv"></span>&nbsp次
+  </span>
+</div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+  
+<section id = "relate">
+	
+</section>
+
+
+  
+    <section id="comment">
+    <!--   <h1 class="title">Comments</h1> -->
+    
+    
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="2015/12/05/有关个人的一点思考(二)/" data-title="有关个人的一点思考(二)" data-url="http://yoursite.com/2015/12/05/有关个人的一点思考(二)/"></div>
+        <!-- 多说评论框 end -->
+        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+        <script type="text/javascript">
+        var duoshuoQuery = {short_name:"MaxBlog"};
+          (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+          })();
+          </script>
+        <!-- 多说公共JS代码 end -->
+
+      
+    </section>
+
+
+
+
+</div></div>
+      <aside id="sidebar" class="alignright">
+  
+<div class="widget tag">
+  <h3 class="title" id="categories">Categories</h3>
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/个人思考/">个人思考</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/实习实训/">实习实训</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日常/">日常</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日记/">日记</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书/">读书</a><span class="category-list-count">3</span></li></ul> 
+</div>
+ 
+
+
+  
+<div class="widget">
+  <h3 class="title">最新评论</h3>
+  	<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments ds-recent-user" data-num-items="3" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+	<!-- 多说最新评论 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"MaxBlog"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">Tag Cloud</h3>
+  <div class="entry">
+    <a href="/tags/人性/" style="font-size: 10px;">人性</a> <a href="/tags/企业/" style="font-size: 10px;">企业</a> <a href="/tags/企业家/" style="font-size: 10px;">企业家</a> <a href="/tags/创业/" style="font-size: 10px;">创业</a> <a href="/tags/反思/" style="font-size: 15px;">反思</a> <a href="/tags/国庆游玩/" style="font-size: 10px;">国庆游玩</a> <a href="/tags/大学班会/" style="font-size: 10px;">大学班会</a> <a href="/tags/实训实习/" style="font-size: 10px;">实训实习</a> <a href="/tags/开放/" style="font-size: 10px;">开放</a> <a href="/tags/思考/" style="font-size: 20px;">思考</a> <a href="/tags/总结体会/" style="font-size: 10px;">总结体会</a> <a href="/tags/母爱/" style="font-size: 10px;">母爱</a> <a href="/tags/管理/" style="font-size: 10px;">管理</a> <a href="/tags/经济/" style="font-size: 10px;">经济</a> <a href="/tags/耐心/" style="font-size: 10px;">耐心</a> <a href="/tags/自信/" style="font-size: 10px;">自信</a> <a href="/tags/行动/" style="font-size: 10px;">行动</a>
+  </div>
+</div>
+
+
+  
+  <div class="widget tag">
+    <h3 class="title">归档</h3>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">2016年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">2016年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">2016年08月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">2016年04月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">2016年03月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">2015年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">2015年11月</a><span class="archive-list-count">1</span></li></ul>
+  </div>
+
+</aside>
+      <div class="clearfix"></div>
+    </div>
+  
+  <footer id="footer"><div class="footer-content inner">
+  <div class="alignleft">
+  
+    &copy; 2016 Max
+    
+  </div>
+  <div class="alignright">
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme
+    <a href="https://github.com/pengloo53/Hexo-theme-light_cn">light_cn</a>
+  </div>
+  
+  <div class="visit">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </div>
+  
+  <div class="clearfix"></div>
+</div></footer>
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<!-- calendar widget -->
+
+
+<!-- 『不蒜子』计数服务 -->
+<script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- wumii关联推荐 -->
+<script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
+
+<!-- 百度推荐 -->
+
+
+<!-- 返回顶部 -->
+<div id="toTop">
+	<a href="#">▲</a>
+	<a href="#footer">▼</a>
+</div>
+
+<!-- 站内搜索-Swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','sC-iNFrvTTNtiXEVNwo1','2.0.0');
+</script>
+
+<!-- fancybox -->
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body>
+</html>

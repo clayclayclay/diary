@@ -1,51 +1,300 @@
-extends base
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>2016大二暑期实训体会 | 记录生活</title>
+  <meta name="author" content="Max">
+  
+  <meta name="description" content="2016大二暑期实训体会">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-block title
-  title= page.title + ' | ' + config.title
+  <meta property="og:title" content="2016大二暑期实训体会"/>
+  <meta property="og:site_name" content="记录生活"/>
 
-block content
-  .post
-    h1.post-title= page.title
-    .post-meta= page.date.format('ll')
-      if page.categories.length > 0
-        span= ' | '
-        span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
-      if theme.busuanzi == true
-        script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
-    if theme.duoshuo
-      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content)
-    .post-content
-      != page.content
-    if theme.shareto == true
-      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
-      a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}')= __('shareto')
-    include _partial/tag
-    include _partial/post_nav
-    if theme.duoshuo
-      div(class='ds-share flat' data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
-         .ds-share-inline
-            ul.ds-share-icons-16
-              li(data-toggle='ds-share-icons-more')
-                a(class='ds-more' href='javascript:void(0);') 分享到：
-              li
-                a(class='ds-weibo' href='javascript:void(0);' data-service='weibo') 微博
-              li
-                a(class='ds-qzone' href='javascript:void(0);' data-service='qzone') QQ空间
-              li
-                a(class='ds-qqt' href='javascript:void(0);' data-service='qqt') 腾讯微博
-              li
-                a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
-            .ds-share-icons-more
-    include _partial/comments
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link rel="alternate" href="/atom.xml" title="记录生活" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <!-- wumiiVerification -->
+  <meta name="wumiiVerification" content="fb50a101-84fe-4ca2-91a7-ae8cf792978b" />
+  <meta name="wumiiVerification" content="d73b5866-c390-4156-a4dd-51b526b5335e" />
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <header id="header"><div class= "header-content inner">
+	<div class = "alignleft col-one">
+		
+			<div class='avatar'>
+				<img src = "/img/room.jpg">
+              </div>
+		
+		<div class="header-div">
+		    <h1><a href="/">记录生活</a></h1>
+		    <h2><a href="/"></a></h2>
+		</div>
+	</div>
+	<div class = "alignright col-two">
+		
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<div class= "header-nav">
+	<div class='header-nav-content inner'>
+		<div id="main-nav" class="alignleft">
+		    		
+		    		  <a href="/"><i class="fa fa-home"></i>Home</a>
+		    		
+		    		  <a href="/archives"><i class="fa fa-archive"></i>Archives</a>
+		    		
+		    		  <a href="/about"><i class="fa fa-user"></i>About</a>
+		    		
+		</div>
+		<div id="sub-nav" class="alignright">
+		    
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+</header>
+  
+    <div id="content" class="inner">
+      <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+        <div class="icon"></div>
+        
+        <time datetime="2016-08-10T16:19:56.000Z"><a href="/2016/08/11/2016大二暑期实训体会/">2016-08-11</a></time>
+        
+  
+    <h1 class="title">2016大二暑期实训体会</h1>
+  
+
+    </header>
+
+    <div class="entry">
+      
+        
+    <div id="toc">
+        
+    </div>
+
+        <p>2016大二暑期实训体会</p>
+<a id="more"></a>
+<p>&emsp;&emsp;一周、两周、三周、四周，什么？游戏要结束了？真的就这样结束了？啊，老子还没过够打怪升级的瘾啊！我不管，我就要打怪，我还想升级啊！！！</p>
+<p>&emsp;&emsp;可是，服务器已经关闭了…我的装备啊，我的宠物宝宝啊，我的金币啊，我的好友啊，我的NPC啊，我的….</p>
+<p>&emsp;&emsp;好吧，事已成定局，米已变熟饭，接下来能做的就是，嘿嘿嘿~~~</p>
+<p>&emsp;&emsp;言归正传，暑期实训结束啦，结束啦，结束啦，重要的事情当然要说三遍咯！</p>
+<p>&emsp;&emsp;这次暑期实训我们游走于袋鼠窝和袋鼠帮，早上下午在袋鼠帮快快乐乐写代码，调bug，学习新知识，新技术，一起调戏嘛噶学长等等，中午在袋鼠窝狼吞虎咽地吃顿美味大餐，兄弟，一碗不够再来一碗，两碗不够就没了。吃完之后，轮流刷碗，这是学长们的福音，是学弟们的光(zai)荣(nan)。之后就赶紧抢床位，然而躺在外边椅子上的我并不着急，所以就免去了一些血雨腥风的fight,嘻嘻嘻！！！</p>
+<p>&emsp;&emsp;每天躺下之后，总能看到还没有熄灭的吊灯，静静地注视一会，总会带给我一种静谧平静的感觉。</p>
+<p><img src="/img/deparment.jpg" alt=""></p>
+<p>&emsp;&emsp;接下来就是我们每天朝九晚六，绝大部分时间所待的地方：袋鼠帮！</p>
+<p>&emsp;&emsp; <strong> ~前方多图高能预警~ </strong></p>
+<p><img src="/img/outside.jpg" alt=""></p>
+<p>&emsp;&emsp;近图</p>
+<p><img src="/img/building.jpg" alt=""></p>
+<p>&emsp;&emsp;接下来再简单地看一下袋鼠帮内部</p>
+<p><img src="/img/indoor.jpg" alt=""><br><img src="/img/indoor2.jpg" alt=""></p>
+<p>&emsp;&emsp;没错，在过去的四周，我们就是在这里打怪升级—暑期实训的。每天早上9点左右出发，大家骑着自行车，或者拼车过去上班，然后中午在袋鼠窝吃顿午饭，休息会，再继续下午的工作，傍晚手工回家。一天的工作就这样结束啦。从表面上，一天天的循规蹈矩的，但在我们工作的一分一秒中，都可能有困难的发生，也会有新的思考萦绕于脑中。</p>
+<p>&emsp;&emsp;在这四周的工作中，我们还做过两次线下产品推广活动。同时这也是我第一次做这样的活动，所以在其中还是有些地方做的不够好。关于此次活动，我总结了两点：</p>
+<ul>
+<li>要有强烈的推广意识</li>
+</ul>
+<p>&emsp;&emsp;注意，是强烈的推广意识。这个时候请允许我回忆一个推广场景：在做线下推广的时候，好不容易拉到了一个用户，说服其花费一点时间来扫个码，绑定个手机号。这个时候，我只是在一旁静静地注视着这一切，而这其中存在着一段双方沉默时间，其实是可以利用起来的。就像罗总事后给我们总结点拨的那样：唉，你看，在那个时间段，我就可以进一步介绍我们xxx是做什么的呀，公司也就在旁边的大厦，xx楼之类的。这样我们充分利用了这段时间，而且尽最大可能来将这位用户发展成我们的潜在用户呢！听完之后，可爱的我瞬间就明白了某些事情。没错，这个就是我想要表达的推广意识，而且还是强烈的。</p>
+<p>&emsp;&emsp;再举一个例子，以此来说明我们在做推广的时候，在活动中一定要明确我们的目标人群是哪些？小孩子？有志青年？中年大妈？老爷爷老奶奶？然后再以此来制定我们具体的推广方案。当时我们做的两次线下推广活动都是一样的，目标人群都是小孩纸！！！为什么呢？因为我们屌炸天的产品啊！（写到这里热血澎湃有木有！！！）然后我们的推广方法就是通过“幸运大转盘”活动（名字虽然有点普通，不过我们要看效果嘛！！！咳咳咳），在实际操作的时候，也是瞄准带有小孩子的家长（注意是小公举们，屌丝御姐之类的就不要来瞎凑合了），这样我们就专挑这样的目标人群“下手”，几乎是一下一个准啊，百发百中有木有！！！通过这样一个简单的小例子，来说明上边所提到的。（本段文章可能就点过于激动，希望大家理解）</p>
+<ul>
+<li>学会接受别人的拒绝</li>
+</ul>
+<p>&emsp;&emsp;接着要分享一下这句话：学会接受别人的拒绝。啊，大家不要首先想到男女表白失败，学会接受拒绝哦。（大家都是成年人了，思想正直点！）回到正题，这里的拒绝，指的就是在做线下推广的时候，面对路人的不加理睬、忽视等。想想当初在校园里边做活动宣传的时候，各位亲爱的同学们许多也是这样的，现在出了校园，来到了社会，同样有这样的情况，而且甚至有过之而无不及。在面对别人的拒绝，我们要做好准备，试着告诉自己：学会接受，微笑再来。我觉着这八个字是做线下活动（尤其是这种吆喝拉路人的推广活动）必须牢记于心，而且身体力行的。其实许多东西我们都能做到牢记于心，但是身体本能对于拒绝的畏惧，失败的没落是有所抗拒的，为此我们才能需要做到身体力行！！！记住没啥太大的用处，能做到才是真本事！（其实，这句话用在情场也是挺受用的）</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/实习实训/">实习实训</a>
+  </div>
+
+        
+  <div class="tags">
+    <a href="/tags/实训实习/">实训实习</a>, <a href="/tags/总结体会/">总结体会</a>
+  </div>
+
+        <div class = "counter">
+  <span id="busuanzi_container_page_pv" style="display:none">
+      总访问&nbsp<span id="busuanzi_value_page_pv"></span>&nbsp次
+  </span>
+</div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+  
+<section id = "relate">
+	
+</section>
+
+
+  
+    <section id="comment">
+    <!--   <h1 class="title">Comments</h1> -->
+    
+    
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="2016/08/11/2016大二暑期实训体会/" data-title="2016大二暑期实训体会" data-url="http://yoursite.com/2016/08/11/2016大二暑期实训体会/"></div>
+        <!-- 多说评论框 end -->
+        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+        <script type="text/javascript">
+        var duoshuoQuery = {short_name:"MaxBlog"};
+          (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+          })();
+          </script>
+        <!-- 多说公共JS代码 end -->
+
+      
+    </section>
+
+
+
+
+</div></div>
+      <aside id="sidebar" class="alignright">
+  
+<div class="widget tag">
+  <h3 class="title" id="categories">Categories</h3>
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/个人思考/">个人思考</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/实习实训/">实习实训</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日常/">日常</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日记/">日记</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书/">读书</a><span class="category-list-count">3</span></li></ul> 
+</div>
+ 
+
+
+  
+<div class="widget">
+  <h3 class="title">最新评论</h3>
+  	<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments ds-recent-user" data-num-items="3" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+	<!-- 多说最新评论 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"MaxBlog"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">Tag Cloud</h3>
+  <div class="entry">
+    <a href="/tags/人性/" style="font-size: 10px;">人性</a> <a href="/tags/企业/" style="font-size: 10px;">企业</a> <a href="/tags/企业家/" style="font-size: 10px;">企业家</a> <a href="/tags/创业/" style="font-size: 10px;">创业</a> <a href="/tags/反思/" style="font-size: 15px;">反思</a> <a href="/tags/国庆游玩/" style="font-size: 10px;">国庆游玩</a> <a href="/tags/大学班会/" style="font-size: 10px;">大学班会</a> <a href="/tags/实训实习/" style="font-size: 10px;">实训实习</a> <a href="/tags/开放/" style="font-size: 10px;">开放</a> <a href="/tags/思考/" style="font-size: 20px;">思考</a> <a href="/tags/总结体会/" style="font-size: 10px;">总结体会</a> <a href="/tags/母爱/" style="font-size: 10px;">母爱</a> <a href="/tags/管理/" style="font-size: 10px;">管理</a> <a href="/tags/经济/" style="font-size: 10px;">经济</a> <a href="/tags/耐心/" style="font-size: 10px;">耐心</a> <a href="/tags/自信/" style="font-size: 10px;">自信</a> <a href="/tags/行动/" style="font-size: 10px;">行动</a>
+  </div>
+</div>
+
+
+  
+  <div class="widget tag">
+    <h3 class="title">归档</h3>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">2016年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">2016年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">2016年08月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">2016年04月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">2016年03月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">2015年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">2015年11月</a><span class="archive-list-count">1</span></li></ul>
+  </div>
+
+</aside>
+      <div class="clearfix"></div>
+    </div>
+  
+  <footer id="footer"><div class="footer-content inner">
+  <div class="alignleft">
+  
+    &copy; 2016 Max
+    
+  </div>
+  <div class="alignright">
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme
+    <a href="https://github.com/pengloo53/Hexo-theme-light_cn">light_cn</a>
+  </div>
+  
+  <div class="visit">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </div>
+  
+  <div class="clearfix"></div>
+</div></footer>
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<!-- calendar widget -->
+
+
+<!-- 『不蒜子』计数服务 -->
+<script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- wumii关联推荐 -->
+<script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
+
+<!-- 百度推荐 -->
+
+
+<!-- 返回顶部 -->
+<div id="toTop">
+	<a href="#">▲</a>
+	<a href="#footer">▼</a>
+</div>
+
+<!-- 站内搜索-Swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','sC-iNFrvTTNtiXEVNwo1','2.0.0');
+</script>
+
+<!-- fancybox -->
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body>
+</html>
